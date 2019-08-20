@@ -1,14 +1,31 @@
 void main() {
-  var myMessage = 'hello';
-  var myMessage2 = 'dart';
+  //numerical type
+  int a = 10;
+  double d = 30.0;
 
-  // single line comment  compiler ignore this commented code..
+  //character type
+  String b = 'dart programming';
 
-  /* this is multiline
-      comments
-      hear.....
-      compiler ignore this commented code..
-   */
+  //switch type detaType contains only tow state at time false or true
+  bool isValid = false;
 
-  print('$myMessage  $myMessage2');
+  //collections types
+  List list = [
+    10,
+    20,
+    30.7,
+    'string..',
+    isValid,
+    [20, 30]
+  ];
+  Set set = Set.from([10, 20, 30.7, 20, 30]);
+  Map data = {'id': 10, 'name': 'dart', 'isvalid': 'No'};
+
+  print('int:$a \ndouble:$d \nString values:$d \nisvalid:$isValid');
+
+  for (var x in list) print(x);
+  list.forEach((f) => print(f));
+
+  print(data['id']);
+  data.forEach((k, v) => print('key is:$k and value is:$v'));
 }
