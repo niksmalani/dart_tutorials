@@ -1,11 +1,8 @@
 void main() {
-  var a = 10;
-  int b = 20;
+  final x = 10;
+  const y = 20;
 
-  var c = 'dart message using runtime string';
-  String cd = 'dart message fixd type string';
+  // x = 30; //genrate error final can not change value ones declare...
 
-  dynamic name = 'Bob';
-
-  print('hello world');
+  print('$x and $y');
 }
