@@ -5,5 +5,7 @@ void main() {
   var c = 'dart message using runtime string';
   String cd = 'dart message fixd type string';
 
+  dynamic name = 'Bob';
+
   print('hello world');
 }
